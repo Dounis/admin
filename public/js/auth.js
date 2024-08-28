@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     const password = document.getElementById('password').value; // Récupère le mot de passe par son identifiant correct
 
     try {
-        const response = await fetch('http://192.168.187.215:3000/api/auth/login', { 
+        const response = await fetch('https://backend-cmui.onrender.com/api/auth/login', { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

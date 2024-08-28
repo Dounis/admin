@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     async function fetchUsers(token) {
-        const response = await fetch('http://192.168.187.215:3000/api/utilisateurs', {
+        const response = await fetch('https://backend-cmui.onrender.com/api/utilisateurs', {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 async function deleteUser(id) {
     const token = localStorage.getItem('authToken');
     if (confirm('Voulez-vous vraiment supprimer cet utilisateur ?')) {
-        await fetch(`http://192.168.187.215:3000/api/utilisateurs/${id}`, {
+        await fetch(`https://backend-cmui.onrender.com/api/utilisateurs/${id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`

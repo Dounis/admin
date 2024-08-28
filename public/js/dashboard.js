@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     async function fetchPredictionsCount(token) {
-        const response = await fetch('http://192.168.187.215:3000/api/predictions', {
+        const response = await fetch('https://backend-cmui.onrender.com/api/predictions', {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     async function fetchUsersCount(token) {
-        const response = await fetch('http://192.168.187.215:3000/api/utilisateurs', {
+        const response = await fetch('https://backend-cmui.onrender.com/api/utilisateurs', {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     async function fetchWarnedUsersCount(token) {
-        const response = await fetch('http://192.168.187.215:3000/api/utilisateurs/avertis', {
+        const response = await fetch('https://backend-cmui.onrender.com/api/utilisateurs/avertis', {
             headers: {
                 'Authorization': `Bearer ${token}`
             }

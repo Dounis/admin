@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     async function fetchPredictions(token) {
         try {
-            const response = await fetch('http://192.168.187.215:3000/api/predictions', {
+            const response = await fetch('https://backend-cmui.onrender.com/api/predictions', {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     async function deletePrediction(id, token) {
         try {
-            const response = await fetch(`http://192.168.187.215:3000/api/predictions/${id}`, {
+            const response = await fetch(`https://backend-cmui.onrender.com/api/predictions/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`

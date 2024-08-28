@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const warningText = document.getElementById('warning-text').value;
         
         if (title && warningText) {
-            const response = await fetch(`http://192.168.187.215:3000/api/utilisateurs/${userId}/avertir`, {
+            const response = await fetch(`https://backend-cmui.onrender.com/api/utilisateurs/${userId}/avertir`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,

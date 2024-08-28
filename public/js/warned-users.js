@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     async function fetchAvertisUsers(token) {
-        const response = await fetch('http://192.168.187.215:3000/api/utilisateurs/avertis', {
+        const response = await fetch('https://backend-cmui.onrender.com/api/utilisateurs/avertis', {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     async function deleteAllWarnings(token) {
-        await fetch('http://192.168.187.215:3000/api/utilisateurs/avertis/supprimer', {
+        await fetch('https://backend-cmui.onrender.com/api/utilisateurs/avertis/supprimer', {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`
