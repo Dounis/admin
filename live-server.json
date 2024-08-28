@@ -1,3 +1,6 @@
 {
-  "open": "index.html"
+  "scripts": {
+  "start": "npm run install-live-server && live-server --open=public/index.html"
+}
+
 }
