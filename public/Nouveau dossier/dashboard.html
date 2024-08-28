@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="container">
+            <h1 class="mb-4">Tableau de bord</h1>
+            <p>
+    Le tableau de bord permet à l'administrateur de gérer les utilisateurs, d'examiner les prédictions, d'envoyer des avertissements, de suivre les utilisateurs avertis, et de supprimer des comptes. Il offre ainsi une vue centralisée pour maintenir l'ordre et l'efficacité sur la plateforme.
+</p>
+<br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gérer les utilisateurs</h5>
+                            <p>
+                                Permet à l'administrateur de visualiser et de 
+                                gérer tous les utilisateurs enregistré sur la plateforme. Vous pouvez voir une liste 
+                                complète des utilisateurs, consulter leurs profils, et effectuer des actions telles que 
+                                la suppression comptes si nécessaire. Cette page est essentielle pour maintenir un contrôle 
+                                efficace sur les utilisateurs de la plateforme.
+                            </p>
+
+                            <a href="users.html" class="btn btn-primary">Accéder</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Utilisateurs avertis</h5>
+                            <p>
+                                Offre une vue détaillée des utilisateurs qui ont reçu des avertissements de la part de l'administrateur. 
+                                Vous pouvez consulter la liste des utilisateurs avertis  
+                                et suivre leurs actions. 
+                                Cette page permet à l'administrateur de surveiller les comportements problématiques 
+                                et de s'assurer que les utilisateurs respectent les règles de la plateforme.
+                            </p>
+
+                            <a href="warned-users.html" class="btn btn-primary">Accéder</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Voir les prédictions</h5>
+                            <p>
+                                Permet à l'administrateur de consulter toutes les prédictions générées par le système. 
+                                Vous pouvez examiner les résultats des analyses effectuées sur les images téléchargées, 
+                                afficher les détails des prédictions.
+                                Cette page est cruciale pour suivre les performances du modèle de prédiction et pour évaluer la précision des 
+                                diagnostics fournis par l'application.
+                            </p>
+
+                            <a href="predictions.html" class="btn btn-primary">Accéder</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy5dB9B3Q2Vn5e5f5+I5X5e5pPp8Dd17C12d6U30" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-S2Wi0rR06CBKkcK9l94U0p2/Y0Pz5BLlP0GmkkQxD2H4P2L5jf1ktP5Xjzd6dxE2" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq7x9a25xFI7gYP7b+RQ0wPz7MTR+ytCkFICwIkjgoRyK1N3hh" crossorigin="anonymous"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
