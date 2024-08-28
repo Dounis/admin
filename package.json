@@ -4,6 +4,8 @@
     "express": "^4.19.2"
   },
   "scripts": {
-    "start": "live-server --open=public/dashboard.html         "
-  }
+  "start": "npx live-server --open=public/dashboard.html",
+  "install-live-server": "npm install -g live-server"
+}
+
 }
